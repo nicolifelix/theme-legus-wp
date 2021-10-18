@@ -1,0 +1,30 @@
+.LegusSection-content__portfolio{
+    padding: 30px 0;
+    background-color: $background-color;
+    .text, .video{
+        padding: 30px;
+    }
+    .row{
+        align-items: center;
+        .LegusElement-content__text{
+            padding: 45px 0;
+            h2{
+                color: $primary-color;
+                font-size: 3.5rem;
+                letter-spacing: -2px;
+                font-weight: 300;
+            }
+            p{
+                font-size: 1.4rem;
+                letter-spacing: 0px;
+                font-weight: 300;  
+            }
+        }
+        .box-video{
+            margin: 5px;
+            .embed-responsive{
+              border-radius: 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,175 @@
+.LegusSection-content__soft{
+    background-image: url(../../assets/img/partes/Home_partes-07.png);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: contain;
+    padding: 45px 0;
+    .LegusElement-content__media{
+      padding: 0 120px 30px;
+      @media screen and (max-width: 599px) {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+      }
+      .LegusElement-content__image{
+        width: 520px;
+        margin-top: -50vh;
+        position: absolute;
+        z-index: 999;
+        @media screen and (max-width: 959px) {
+          position: relative;
+          width: 200px;
+          margin-top: 0;
+        }
+      }
+    }
+    .LegusElement-content__text{
+      h2{
+      color: $primary-color;
+      padding: 120px 30px 120px 60px;
+      font-weight: 400;
+      letter-spacing: -1px;
+      font-size: 2.5em;
+        @media screen and (max-width: 800px) {
+          padding:30px;
+          text-align: center;
+        }
+      }
+    }
+  }
+  
+  .LegusSection-manual__home, .LegusSection-manual__empresa{
+    padding: 30px 0;
+    background-color: $background-color;
+    .text{
+      display: flex;
+      align-items: flex-end;
+      @media screen and (max-width: 599px) {
+        padding: 30px;
+        text-align: center;
+      }
+    }
+    .LegusElement-manual__text{
+      padding: 45px 0;
+      @media screen and (max-width: 800px) {
+        padding: 0;
+        text-align: justify;
+      }
+      h2{
+        color: $transform-color;
+        font-size: 3em;
+        letter-spacing: -2px;
+        font-weight: 400;
+      }
+      p{
+        font-size: 1.4rem;
+        letter-spacing: 0px;
+        font-weight: 500;  
+      }
+    }
+    .LegusElement-sep{
+      padding: 45px;
+      @media screen and (max-width: 599px) {
+        display: flex;
+        justify-content: center;
+        margin-left: 0;
+      }
+      img{
+        width: 150px;
+        margin-left: -8vw;
+      }
+    }
+    .LegusElement-manual__itens{
+      padding: 30px 0;
+      .box-img{
+        height: 250px;
+        display: flex;
+        .manual-itens{
+          background-color: #ffffff;
+          border-radius: 10px;
+          padding: 45px 75px;
+          margin: 15px;
+          box-shadow: 7px 6px 7px 4px #cecece;
+          -webkit-box-shadow: 4px 7px 6px 2px #cecece;
+          -moz-box-shadow: 17px 20px 17px -11px #cecece;
+          &:hover{
+            background-color: $transform-color;
+            .manual-itens__img{
+              filter: brightness(0) invert(1);
+            }
+            p{
+                color: #ffffff;
+            }   
+          }
+          .manual-itens__img{
+            width: 100px;
+            margin-top: -20%;
+          }
+          p{
+            font-size: 1.350rem;
+            color: $transform-color;
+            text-align: center;
+            margin: 0;
+            font-weight: 600;
+          }
+        }  
+        .perspective-left {
+          transform: perspective(1500px) rotateY(0deg);
+          transition: transform 1s ease 0s;
+        }
+        
+        .perspective-left:hover {
+          transform: perspective(3000px) rotateY(15deg);
+        }    
+        .perspective-right {
+          transform: perspective(1500px) rotateY(0deg);
+          transition: transform 1s ease 0s;
+        }
+        .perspective-right:hover {
+          transform: perspective(3000px) rotateY(-15deg);
+        }
+      }
+    }
+  }
+  
+  .LegusSection-work{
+    position: relative;
+    padding: 75px 0;
+    overflow: hidden;
+    .work-text{
+      width: 80%;
+      margin-bottom: 45px;
+      @media screen and (max-width: 800px) {
+        padding: 15px;
+        text-align: justify;
+        width: 100%;
+        margin: 0;
+      }
+      h2{
+        color: $primary-color;
+        font-size: 3em;
+        letter-spacing: -2px;
+        font-weight: 400;
+        @media screen and (max-width: 800px) {
+          text-align: center;
+        }
+      }
+      p{
+        font-size: 1.35rem;
+        letter-spacing: 0px;
+        font-weight: 400;
+      }
+    }
+    .swiper-container {
+      overflow: visible;
+      .box-video{
+        margin: 5px;
+        .embed-responsive{
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+  
+  
+  

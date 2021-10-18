@@ -1,0 +1,52 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+.footer{
+    padding: 30px;
+    background-color: $primary-color;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    .logo{
+        display: flex;
+        justify-content: flex-end;
+        float: right;
+        @media (max-width: 600px){
+            justify-content: initial;
+            float: initial;
+            margin-left: 15%;
+        }
+        img{
+            width: 60%;
+        }
+    }
+    .icon{
+        width: 26px;
+        height: 26px;
+        margin-right: 4%;
+    }
+    p{
+        font-size: 0.850rem;
+        font-weight: 200;
+    }
+    i{
+        font-size: 1.250rem; 
+        margin-right: 10px;
+    }
+    .box1, .box2, .box3{
+        padding: 15px 45px;
+        @media (max-width: 600px){
+            padding: 30px;
+        }
+        @media (min-width: 601px) and (max-width: 800px){
+            padding: 15px;
+        }
+    }
+    .box3{
+        border-left: 1px solid #fff;
+        @media (max-width: 600px){
+            border:none;
+        }
+    }
+}
+

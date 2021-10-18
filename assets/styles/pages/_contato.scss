@@ -1,0 +1,215 @@
+.LegusSection-content__img{
+    background-image: url("../../assets/img/partes/Predios_Prancheta_1.png"); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-color: $background-color;
+    padding: 30px 30px 90px 30px;
+    @media (max-width: 600px){
+        padding: 15px 15px 60px 15px;
+        
+      }
+    .row{
+        display: flex;
+        justify-content: space-evenly;
+        .LegusElement-text{
+            padding: 60px;
+            @media (max-width: 800px){
+                padding: 15px;
+              }
+            h1{
+                color: $primary-color;
+                font-size: 4rem;
+                @media (max-width: 800px){
+                    font-size: 3rem;
+                  }
+            }
+            p{
+                font-size: 1.15rem;
+                letter-spacing: 0px;
+                font-weight: 400;  
+                @media (max-width: 600px){
+                    font-size: 0.950rem;
+                  }
+            }
+        }
+    }
+}
+
+.LegusElement-form{
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 10px 10px 14px -3px rgba(102,102,102,0.75);
+    -webkit-box-shadow: 10px 10px 14px -3px rgba(102,102,102,0.75);
+    -moz-box-shadow: 10px 10px 14px -3px rgba(102,102,102,0.75);
+    margin-top: -20%;
+    @media (max-width: 600px){
+        margin-top: 0;
+    }
+    form{
+        padding: 45px;
+        @media (max-width: 600px){
+            text-align: center;
+        }
+        .form-item{
+            display: block;
+            width: 100%;
+            padding: .475rem;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 2;
+            color: #495057;
+            background-color: #fff;  
+            border: #fff;
+            border-bottom: 1px solid $secondary-color;
+            border-radius: .25rem;   
+            &:focus-visible{
+                outline: none;
+            }   
+        }
+        label{
+            font-size: 1.15rem;
+            font-weight: 500;
+            letter-spacing: -1px;
+            margin-bottom: 2rem;
+
+        }
+        .btn-legus{
+            display: inline-block;
+            font-weight: 600;
+            color: #fff;
+            background-color: $primary-color;
+            border-color: $primary-color;
+            text-align: center;
+            vertical-align: middle;
+            width: 200px;
+            height: 45px;
+            padding: .375rem .75rem;
+            font-size: 1.150rem;
+            line-height: 1.5;
+            border-radius: 1.5rem;
+            transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        }
+        .submit{
+            background-color: $third-color;
+            border-color: $third-color; 
+            width: 140px;
+            height: 35px;
+            font-size: 1rem;
+            font-weight: 500;
+            line-height: 1.250;
+            @media (min-width: 600px) and (max-width: 800px){
+                width: auto;
+            }
+        }
+        .planta{
+            display: flex;
+            justify-content: space-between;
+        }
+        .metragem{
+            font-size: 0.850rem;
+            color: #757575;
+            display: flex;
+            justify-content: space-around;
+        }
+        // RANGE - BACKGROUND
+        input[type="range"] {
+            -webkit-appearance: none;
+            -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+            width: 100%;
+            height: 20px;
+            margin: 10px;
+            border: 3px solid #d6d6d6;
+            padding: 1px 2px;
+            border-radius: 5px;
+            background: #eff2fb;
+            outline: none; /* no focus outline */
+          }
+        // END
+
+        //   BOLINHA
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 25px;
+            height: 25px;
+            border: none;
+            border-radius: 12px;
+            background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0d357e), color-stop(100%, #001946)); /* android <= 2.2 */
+            background-image: -webkit-linear-gradient(top , #529de1 0, #245e8f 100%); /* older mobile safari and android > 2.2 */;
+            background-image: linear-gradient(to bottom, #0d357e 0, #001946 100%); /* W3C */
+        }
+        input[type=range]::-webkit-slider-thumb{
+            border: 1px solid #001946;
+        }
+        // END 
+        input[type="range"]::-moz-range-track {
+        border: inherit;
+        background: transparent;
+        }
+        input[type=range]:focus{
+            outline: none;
+        }
+        input[type=range]:focus::-webkit-slider-runnable-track{
+            border-radius: 5px;
+        }     
+    }
+    
+    .form-radio-hidden{
+        display: flex;
+        align-items: center;
+    }
+    .form-radio-hidden input{
+        width: 0;
+    }
+    .form-radio-hidden .radio{
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        display: inline-block;
+        position: relative;
+        height: 24px;
+        width: 24px;
+        border-radius: 20px;
+        margin-right: 5px;
+        border: 1px solid #999999;
+        background-color: #ffffff;
+        box-shadow: 0 0 4px 0 rgba(0,0,0,0.1);
+        cursor: pointer;
+        outline: none;
+        box-sizing: border-box;
+        transition: .5s all;
+    }
+    .form-radio-hidden:hover .radio{
+        background-color: #f9f9f9;
+        box-shadow: inset 1px 2px 3px 0 rgba(0,0,0,0.1);
+    }
+    .form-radio-hidden input:checked + .radio{
+        border-color: #555;
+        background-color: #f9f9f9;
+        box-shadow: inset 1px 2px 3px 0 rgba(0,0,0,0.1);
+        cursor: default;
+    }
+    .form-radio-hidden:hover .radio::before, .form-radio-hidden input:checked + .radio::before{
+        content: '';
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        border-radius: 8px;
+        background-color: #ddd;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .form-radio-hidden input:checked + .radio::before{
+        background-color: $primary-color;
+        box-shadow: 1px 2px 2px 0 rgba(0,0,0,0.2);
+    }
+    .form-radio-hidden input + .radio + .text{
+        cursor: pointer;
+        font-size: 14px;
+    }
+    .form-radio-hidden input:checked + .radio + .text{
+        color: #555;
+        cursor: default;
+    }
+}
